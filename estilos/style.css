@@ -1,0 +1,109 @@
+.color1 {color: #171618;}
+.color2 {color: #535556;}
+.color3 {color: #767986;}
+.color4 {color: #cfc7d4;}
+.color5 {color: #f9f9f9;}
+body {
+    font-family: 'Major Mono Display', monospace;
+    background-color: #f9f9f9;
+    width: 100vw;
+
+}
+header{
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.logoMarca {
+    width: 500px;
+    height: 500px;
+    margin: -150px auto;
+}
+.navbar1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+.carousel{
+    margin: 0 auto;
+    height: 600px;
+    overflow: hidden;
+    
+}
+.carousel img{
+    object-fit: contain;
+}
+
+.descripcionCategoria{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 200px 0 200px;
+    justify-content: space-around;
+    font-size: 30px;
+    font-weight: bold;
+}
+.categoriaPrincipal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.categoriaPrincipal img{
+    height: 600px;
+    width: auto;
+}
+
+.mainHombres{
+    display: flex;
+    flex-direction: row;
+
+}
+.navbarHombres a{
+    text-decoration: none;
+    color: #535556; 
+    text-align: center;
+    justify-content: center;
+}
+.navbarHombres a:hover{
+    text-decoration: none;
+    color: #171618;
+    font-weight: 600;
+}
+/*.galeriaHombres {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+}*/
+.galeriaHombres .card{
+    display: block;
+    margin: auto;
+    transition: all 1s;
+}
+.galeriaHombres .card:hover{
+    transform: scale(1.1,1.1);
+}
+.galeriaHombres p{
+    text-align: center;
+}
+
+th {
+    color: #f9f9f9;
+    background-color: #171618;
+}
+.video{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    background-color: #171618;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px 0;
+}
+.contactoRedes {
+    color: #f9f9f9;
+    font-size: 30px;
+}
