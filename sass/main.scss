@@ -45,7 +45,7 @@ header {
 }
 
 .carousel {
-  margin: 0 auto;
+  margin: 5rem auto;
   height: 600px;
   overflow: hidden;
 
@@ -54,30 +54,39 @@ header {
   }
 }
 
-.descripcionCategoria {
-  display: flex;
-  flex-direction: row;
-  margin: 10px 200px 0 200px;
-  justify-content: space-around;
-  font-size: 30px;
-  font-weight: bold;
-}
-
 .categoriaPrincipal {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 5rem auto;
+  justify-content: space-around;
+  width: 75%;
+}
 
-  img {
-    height: 600px;
-    width: auto;
-  }
+.bannerIndex{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  background-color: #171618;
+  width: 75%;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.cardRedes{
+  display: flex;
+  margin: 5rem auto;
+  justify-content: center;
 }
 
 .mainHombres {
   display: flex;
   flex-direction: row;
+}
+
+.menuFixed{
+  position: fixed;
 }
 
 .navbarHombres a {
@@ -112,11 +121,6 @@ header {
 th {
   color: #f9f9f9;
   background-color: #171618;
-}
-
-.video {
-  display: flex;
-  flex-direction: column;
 }
 
 footer {
