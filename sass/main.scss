@@ -117,10 +117,17 @@ header {
     text-align: center;
   }
 }
+.QuienesSomos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto 10rem;
+}
 
-th {
-  color: #f9f9f9;
-  background-color: #171618;
+.QuienesSomos img{
+  height: 30rem;
+  width: auto;
 }
 
 footer {
