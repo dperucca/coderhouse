@@ -39,7 +39,7 @@
                             <a class="nav-link" href="./ninos.html">teens</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./talles.html">talles</a>
+                            <a class="nav-link" href="./talles.html">nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="contacto.html">contacto</a>
@@ -51,44 +51,36 @@
     </header>
 
     <main>
-        
-        <form action="archivo.php" method="POST">
 
-            <div>
-                <label for="nombre">Nombre</label>                
-                <input type="text" id="nombre">
-            </div>
+        <h1>contacto</h1>
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item"><i class="fab fa-whatsapp"></i>  5492657123456</li>
+                <li class="list-group-item"><i class="fas fa-phone"></i>   +54 9 2657 123456</li>
+                <li class="list-group-item"><i class="fas fa-at"></i>   isaias@gmail.com</li>
+            </ul>
 
-            <div>
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido">
-            </div>
+            <form action="archivo.php" method="POST">
+                <div>
+                    <label for="nombre">nombre</label>                
+                    <input type="text" id="nombre">
+                </div>
 
-            <div>
-                <label for="mail">Mail de contacto</label>
-                <input type="text" id="mail">
-            </div>
+                <div>
+                    <label for="mail">email</label>
+                    <input type="text" id="mail">
+                </div>
 
-            <div>
-                <label for="nacimiento">Fecha de nacimiento</label>
-                <input type="date" id="nacimiento">
-            </div>
+                <div>
+                    <label for="comentarios">deja tu mensaje</label>
+                    <input type="text" id="comentarios">
+                </div>
 
-            <div>
-                <label for="interes">categorias</label>
-                <select id="interes">
-                    <option value=""></option>
-                    <option value="Hombres">Hombres</option>
-                    <option value="Niños">Niños</option>
-                </select>
-            </div>
-
-            <div>
-                <input type="reset" value="Limpiar formulario">
-                <input type="submit">
-            </div>
-
-        </form>
+                <div>
+                    <input type="submit" value="enviar">
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer>
