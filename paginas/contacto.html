@@ -20,7 +20,7 @@
 </head>
 <body>
     <header>
-        <img src="../imagenes/logo.png" alt="logo" class="logoMarca">
+        <img src="../imagenes/logo2222.png" alt="logo" class="logoMarca">
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark d-flex justify-content-center">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"></a>
@@ -51,32 +51,31 @@
     </header>
 
     <main>
-
-        <h1>contacto</h1>
-        <div>
+        <h1 class="contacto">contacto</h1>
+        <div class="formContacto">
             <ul class="list-group">
                 <li class="list-group-item"><i class="fab fa-whatsapp"></i>  5492657123456</li>
                 <li class="list-group-item"><i class="fas fa-phone"></i>   +54 9 2657 123456</li>
                 <li class="list-group-item"><i class="fas fa-at"></i>   isaias@gmail.com</li>
             </ul>
 
-            <form action="archivo.php" method="POST">
-                <div>
+            <form class="formulario" action="archivo.php" method="POST">
+                <div class="contenedorInput">
                     <label for="nombre">nombre</label>                
                     <input type="text" id="nombre">
                 </div>
 
-                <div>
+                <div class="contenedorInput">
                     <label for="mail">email</label>
                     <input type="text" id="mail">
                 </div>
 
-                <div>
+                <div class="contenedorInput">
                     <label for="comentarios">deja tu mensaje</label>
-                    <input type="text" id="comentarios">
+                    <textarea rows="6" id="comentarios"></textarea>
                 </div>
 
-                <div>
+                <div class="contenedorInput">
                     <input type="submit" value="enviar">
                 </div>
             </form>

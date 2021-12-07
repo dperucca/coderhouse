@@ -31,10 +31,20 @@ header {
   flex-wrap: wrap;
 }
 
+main {
+  min-height: calc(100vh - 227px - 105px)
+}
+
 .logoMarca {
-  width: 500px;
-  height: 500px;
-  margin: -150px auto;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+
+  @media (min-width: 768px) {
+    height: 150px;
+    width: auto;
+  }
 }
 
 .navbar1 {
@@ -46,7 +56,6 @@ header {
 
 .carousel {
   margin: 5rem auto;
-  height: 600px;
   overflow: hidden;
 
   img {
@@ -58,47 +67,82 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 24px;
   margin: 5rem auto;
   justify-content: space-around;
   width: 75%;
 }
 
+.imgCategoria{
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+}
 .bannerIndex{
   display: flex;
-  flex-direction: column;
-  margin: auto;
-  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
   background-color: #171618;
   width: 75%;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bolder;
+  color: #f9f9f9;
+  padding: 8px;
+  p{
+    margin: 0;
+    text-align: center;
+  }
+  @media (max-width: 768px)
+  {font-size: 1.5rem;}
+  
 }
 
 .cardRedes{
   display: flex;
   margin: 5rem auto;
   justify-content: center;
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
 }
 
 .mainHombres {
   display: flex;
   flex-direction: row;
+  padding: 16px 0;
+
+  @media (max-width: 425px) {
+    flex-wrap: wrap;
+  }
 }
 
 .menuFixed{
-  position: fixed;
+  position: sticky;
+  top: 0px;
+  left: 0px;
 }
 
-.navbarHombres a {
-  text-decoration: none;
-  color: #535556;
-  text-align: center;
-  justify-content: center;
-
-  &:hover {
+.navbarHombres{
+  a {
     text-decoration: none;
-    color: #171618;
-    font-weight: 600;
+    color: #535556;
+    text-align: center;
+    justify-content: center;
+    
+    &:hover {
+      text-decoration: none;
+      color: #171618;
+      font-weight: 600;
+    }
+  }
+
+  @media (max-width: 425px) {
+    margin: 0 auto;
   }
 }
 
@@ -122,14 +166,14 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  margin: 2rem 10rem;
+  margin: 2rem auto;
+  width: 75%;
 }
 
 .QuienesSomos img{
-  height: 30rem;
-  width: auto;
+  height: auto;
+  width: 100%;
   margin: 2rem auto;
-
 }
 
 .historia{
@@ -154,7 +198,45 @@ footer {
   padding: 30px 0;
 }
 
+.formContacto{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+  width: 75%;
+  margin: 0 auto;
+  padding: 50px;
+
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 50%;
+
+    @media (max-width: 768px){
+      width: 100%;
+    }
+  }
+
+  .contenedorInput{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    input {
+      width: 100%;
+      border-radius: 4px;
+    }
+  }
+}
+
 .contactoRedes {
   color: #f9f9f9;
   font-size: 30px;
+}
+
+.contacto {
+  margin-left: 50px;
+  margin-top: 50px;
 }
